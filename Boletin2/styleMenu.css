@@ -1,0 +1,66 @@
+:root
+{
+    --color-bg: #1E3A8A;
+    --color-surface: #3B82F6;
+    --color-accent: #FBBF24;
+    --color-text: #F8FAFC;
+    --color-text-on-accent: #1E3A8A;
+    --color-win: #10B981;
+    --color-lose: #EF4444;
+}
+
+body
+{
+    background: var(--color-bg);
+    font-family: "Bungee Inline", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1
+{
+    color: var(--color-text);
+    font-size: 90px;
+    text-align: center;
+    margin: 20px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.game-btn
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--color-accent);
+    color: var(--color-text-on-accent);
+    text-decoration: none;
+
+    font-family: "Bungee Inline", sans-serif;
+    font-size: 2rem;
+
+    padding: 20px 80px;
+    border: 3px solid var(--color-accent);
+    border-radius: 100px;
+
+    transition: transform 0.5s ease;
+}
+
+.game-btn:hover
+{
+    transform: scale(1.1);
+}
