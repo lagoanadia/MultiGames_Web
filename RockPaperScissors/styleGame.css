@@ -119,6 +119,7 @@ h1
 .counter
 {
     margin: 0px 130px;
+  flex-wrap: nowrap;
    
 }
 .amount
